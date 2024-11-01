@@ -1,7 +1,7 @@
 const CTX = document.getElementById('expense-graph');
 let myData = [];
 
-fetch("http://localhost:8000/data.json").then(response =>
+fetch("https://perrys-expense-tracker.netlify.app/data.json").then(response =>
   response.json()).then((response) => {
     myData = response;
     main();
